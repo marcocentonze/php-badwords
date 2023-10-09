@@ -5,6 +5,7 @@ $hiddenText = $_POST["hiddentext"];
 
 //ottengo la lunghezza del testo
 $textLength = strlen($randomText);
+$badwordsLenght = strlen($hiddenText);
 
 
 //censuro le bad words
@@ -32,6 +33,7 @@ $badwords = str_replace($hiddenText, '***' , $randomText);
 
      <div>
     <h2>Bad Words: <?php echo $hiddenText ?></h2>
+    <p>Text length: <?php echo $badwordsLenght ?> characters</p>
     </div>
 
 
