@@ -14,11 +14,14 @@
 <body>
     
 <form action="script.php" method="POST">
-    <input type="text" name="randomtext" id="randomtext" placeholder="Type your text">
-    <input type="password" name="">
    
 
-    <button type="submit">Save</button>
+    <textarea name="randomtext" id="randomtext" placeholder="Type your text here"></textarea>
+
+      <input type="text" name="hiddentext" id="hiddentext" placeholder="You can write bad words here" style="width:200px;">
+   
+
+    <button type="submit">Submit</button>
   </form>
 
 
